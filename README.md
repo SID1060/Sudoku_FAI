@@ -46,6 +46,7 @@ Users can edit the board manually, view "Entropy" (candidates) on click, and exe
 
 ### Open the Project:
 Choose a Puzzle: Select a difficulty level from the "DIFFICULTY DATABASE" dropdown or start with an Empty Grid.
+Project link - https://sudoku-fai.vercel.app/
 
 ### Solve the Puzzle:
 Select a protocol (e.g., Hybrid or Arc Const.) and click "EXECUTE PROTOCOL" to watch the solution unfold.
@@ -53,3 +54,4 @@ Select a protocol (e.g., Hybrid or Arc Const.) and click "EXECUTE PROTOCOL" to w
 ## Key Functions
 
 ### Board Management:
+
