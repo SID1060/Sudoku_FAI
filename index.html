@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Constraint Logic Engine</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="app-wrapper">
+        <!-- Left Panel: Logs and Info -->
+        <aside class="sidebar">
+            <h2>System Logs</h2>
+            <div class="log-viewer" id="actionLog">
+                <div class="log-entry">_SYSTEM_INIT...</div>
+                <div class="log-entry">_READY.</div>
+            </div>
+            
+            <div class="candidates-panel">
+                <h3>Node Analysis</h3>
+                <div id="candidateDisplay" class="candidate-box">Select a node to analyze entropy.</div>
+            </div>
+        </aside>
+
+        <!-- Center Panel: The Game -->
+        <section class="game-area">
+            <header>
+                <h1>Logic Grid Master</h1>
+                <p>Constraint Propagation Engine v2.0</p>
+            </header>
+
+            <div id="gridContainer" class="grid-layout"></div>
+
+            <div class="toolbar">
+                <div class="button-group">
+                    <div>
+                        <label>DIFFICULTY DATABASE</label>
+                        <select id="levelSelector" class="dropdown">
+                            <option value="empty">Empty Grid</option>
+                            <option value="starter">Starter</option>
+                            <option value="moderate">Moderate</option>
+                            <option value="complex">Complex</option>
+                            <option value="nightmare">Nightmare</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label>ALGORITHM PROTOCOL</label>
+                        <select id="algoSelector" class="dropdown">
+                            <option value="hybrid">Hybrid (Smart)</option>
+                            <option value="ac3">Arc Const. (Logic)</option>
+                            <option value="backtrack">Backtrack (Brute)</option>
+                        </select>
+                    </div>
+                    <div style="display: flex; align-items: flex-end;">
+                        <button id="btnLoad" class="action-btn">Load Data</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="main-controls">
+                <button id="btnSolve" class="action-btn primary">EXECUTE PROTOCOL</button>
+                <button id="btnClear" class="action-btn warning">Wipe Node</button>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
